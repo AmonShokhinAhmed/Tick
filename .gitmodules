@@ -1,0 +1,3 @@
+[submodule "Tick/vendor/spdlog"]
+	path = Tick/vendor/spdlog
+	url = https://github.com/gabime/spdlog

@@ -8,6 +8,11 @@ extern Tick::Application* Tick::CreateApplication();
 int main(int argc, char** argv) 
 {
 	printf("Tick Engine\n");
+
+	Tick::Log::Init();
+	TICK_CORE_WARN("warn");
+	int a = 5;
+	TICK_INFO("Hello! Var={0}", a);
 	auto app = Tick::CreateApplication();
 	app->Run();
 	delete app;
