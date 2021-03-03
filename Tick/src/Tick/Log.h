@@ -17,14 +17,14 @@ namespace Tick {
 	};
 }
 
-#define TICK_CORE_TRACE(...)       ::Tick::Log::GetCoreLogger()->trace(__VA_ARGS__)
-#define TICK_CORE_INFO(...)        ::Tick::Log::GetCoreLogger()->info(__VA_ARGS__)
-#define TICK_CORE_WARN(...)        ::Tick::Log::GetCoreLogger()->warn(__VA_ARGS__)
-#define TICK_CORE_ERROR(...)       ::Tick::Log::GetCoreLogger()->error(__VA_ARGS__)
-#define TICK_CORE_FATAL(...)       ::Tick::Log::GetCoreLogger()->fatal(__VA_ARGS__)
+#define LOG_CORE_TRACE(...)       ::Tick::Log::GetCoreLogger()->trace(__VA_ARGS__)
+#define LOG_CORE_INFO(...)        ::Tick::Log::GetCoreLogger()->info(__VA_ARGS__)
+#define LOG_CORE_WARN(...)        ::Tick::Log::GetCoreLogger()->warn(__VA_ARGS__)
+#define LOG_CORE_ERROR(...)       ::Tick::Log::GetCoreLogger()->error(__VA_ARGS__)
+#define LOG_CORE_FATAL(...)       ::Tick::Log::GetCoreLogger()->fatal(__VA_ARGS__)
 
-#define TICK_TRACE(...)            ::Tick::Log::GetClientLogger()->trace(__VA_ARGS__)
-#define TICK_INFO(...)             ::Tick::Log::GetClientLogger()->info(__VA_ARGS__)
-#define TICK_WARN(...)             ::Tick::Log::GetClientLogger()->warn(__VA_ARGS__)
-#define TICK_ERROR(...)            ::Tick::Log::GetClientLogger()->error(__VA_ARGS__)
-#define TICK_FATAL(...)            ::Tick::Log::GetClientLogger()->fatal(__VA_ARGS__)
+#define LOG_TRACE(...)            ::Tick::Log::GetClientLogger()->trace(__VA_ARGS__)
+#define LOG_INFO(...)             ::Tick::Log::GetClientLogger()->info(__VA_ARGS__)
+#define LOG_WARN(...)             ::Tick::Log::GetClientLogger()->warn(__VA_ARGS__)
+#define LOG_ERROR(...)            ::Tick::Log::GetClientLogger()->error(__VA_ARGS__)
+#define LOG_FATAL(...)            ::Tick::Log::GetClientLogger()->fatal(__VA_ARGS__)
